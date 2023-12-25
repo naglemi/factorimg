@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+factorimg.egg-info/PKG-INFO
+factorimg.egg-info/SOURCES.txt
+factorimg.egg-info/dependency_links.txt
+factorimg.egg-info/requires.txt
+factorimg.egg-info/top_level.txt
