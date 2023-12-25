@@ -3,6 +3,7 @@ import pandas as pd
 from PIL import Image, ImageDraw
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 
 class HexTable:
     def __init__(self):
@@ -22,9 +23,9 @@ class HexTable:
             hex_color = '#{:02x}{:02x}{:02x}'.format(*color)
             if hex_color in self.color_dict:
                 self.color_dict[hex_color]['count'] += 1
-                self.color_dict[hex_color]['image_paths'].append(image_path)
+                #self.color_dict[hex_color]['image_paths'].append(image_path)
             else:
-                self.color_dict[hex_color] = {'r': color[0], 'g': color[1], 'b': color[2], 'count': 1, 'image_paths': [image_path]}
+                self.color_dict[hex_color] = {'r': color[0], 'g': color[1], 'b': color[2], 'count': 1}
 
     def process_folder(self, folder_path):
         """
